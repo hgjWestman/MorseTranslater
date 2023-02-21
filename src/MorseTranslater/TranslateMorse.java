@@ -50,6 +50,7 @@ public class TranslateMorse {
         morseAlphabet.put("?", "**--**");
         morseAlphabet.put(" ", "/");
 
+
         // Table for translation morse to character
         HashMap<String, String> morseAlphabetBackwards = new HashMap<>();
 
@@ -94,6 +95,22 @@ public class TranslateMorse {
         morseAlphabetBackwards.put("**--**","?");
         morseAlphabetBackwards.put("/"," ");
 
+
+         /* ÅÄÖ () @
+        morseAlphabet.put("Å","*--*-");
+        morseAlphabet.put("Ä","*-*-");
+        morseAlphabet.put("Ö","---*");
+        morseAlphabet.put("(","-*--*");
+        morseAlphabet.put(")","-**-*-");
+        morseAlphabet.put("@","*--*-*");
+
+        morseAlphabetBackwards.put("*--*-","Å");
+        morseAlphabetBackwards.put("*-*-","Ä");
+        morseAlphabetBackwards.put("---*","Ö");
+        morseAlphabetBackwards.put("-*--*","(");
+        morseAlphabetBackwards.put("-**-*-",")");
+        morseAlphabetBackwards.put("*--*-*","@");
+         */
 
         String output = "";
         // determine if the input is plain text or morse code, if the input contains * and/or -, assume it's morse code
